@@ -49,6 +49,8 @@ def measure_depth_increase_robust(input=list, step=3):
 
 
 def measure_depth_increase_robust_alt(input=list, step=3):
+    """ See docstring above
+    """
     return sum([b > a for (a, b) in zip(input[:-step], input[step:])])
 
 
